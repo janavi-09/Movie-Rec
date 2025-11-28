@@ -13,6 +13,8 @@ Built with Python, this project analyzes your viewing history and preferences to
 
 Dive into the realm of personalized movie suggestions with this innovative project!!
 
+<img width="650" height="600" alt="image" src="https://github.com/user-attachments/assets/b76a7fbe-4945-4d2e-a1cf-f4f7afde744b" />
+
 ## 🛠️ Tech Stack
 
 - 🐍 Python
