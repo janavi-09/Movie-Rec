@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content-based Recommendations</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 65%;
+        }
+        th, td {
+            border: 2px solid black;
+            text-align: left;
+            padding: 8px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Content-based Recommendations</h1>
+    <table style=" background-color:bisque; padding: 5.5%; color:maroon;">
+        <thead>
+            <tr>
+                <th>Movie Title</th>
+                <th>Similarity Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for recommendation in recommendations %}
+            <tr>
+                {% set columns = recommendation.split('|||') %}
+                {% for column in columns %}
+                <td>{{ column }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

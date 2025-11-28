@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+</head>
+<body style=" background-color:bisque; padding: 5.5%; color:maroon;">
+    <h1>Movie Recommendation System</h1>
+
+    <!-- Form for Popularity-based recommendations -->
+    <h2>Popularity-based Recommendations</h2>
+    <form action="/popularity_recommendations" method="POST">
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre"><br><br>
+        <label for="min_reviews_threshold">Minimum Reviews Threshold:</label>
+        <input type="text" id="min_reviews_threshold" name="min_reviews_threshold"><br><br>
+        <label for="num_recommendations">Number of Recommendations:</label>
+        <input type="text" id="num_recommendations" name="num_recommendations"><br><br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+
+    <!-- Form for Content-based recommendations -->
+    <h2>Content-based Recommendations</h2>
+    <form action="/content_recommendations" method="POST">
+        <label for="movie_title">Movie Title:</label>
+        <input type="text" id="movie_title" name="movie_title"><br><br>
+        <label for="num_recommendations">Number of Recommendations:</label>
+        <input type="text" id="num_recommendations" name="num_recommendations"><br><br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+
+    <!-- Form for Collaborative filtering recommendations -->
+    <h2>Collaborative Filtering Recommendations</h2>
+    <form action="/collaborative_filtering_recommendations" method="POST">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" name="user_id"><br><br>
+        <label for="num_recommendations">Number of Recommendations:</label>
+        <input type="text" id="num_recommendations" name="num_recommendations"><br><br>
+        <label for="k_similar_users_threshold">Threshold for Similar Users (k):</label>
+        <input type="text" id="k_similar_users_threshold" name="k_similar_users_threshold"><br><br>
+        <input type="submit" value="Get Recommendations">
+    </form>
+</body>
+</html>
