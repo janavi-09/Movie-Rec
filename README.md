@@ -19,7 +19,6 @@ Dive into the realm of personalized movie suggestions with this innovative proje
 
 - 🐍 Python
 
-
 ## 📦 Key Dependencies
 
 ```
@@ -68,7 +67,6 @@ six: 1.16.0
    - Windows: `venv\Scripts\activate`
    - Unix/MacOS: `source venv/bin/activate`
 4. Install dependencies: `pip install -r requirements.txt`
-
 
 ## 👥 Contributing
 
